@@ -1,42 +1,83 @@
-# 📦 QR Code Generator (Python)
+# QR Code Generator (Python)
 
-A simple terminal-based QR Code Generator built using Python.  
-The program allows users to enter text or a URL and generates a QR code image saved as a PNG file.
+A simple terminal-based QR Code Generator built using Python.
 
----
-
-## 🚀 Features
-- Generate QR codes from text or URLs
-- Saves QR code as an image file
-- Input validation to prevent empty data
-- Beginner-friendly and clean code structure
-- Prints exact file path after saving for easy access
+This program allows users to enter text or a URL, customize QR code colors, and generate a QR code image saved as a PNG file with a unique timestamped filename.
 
 ---
 
-## 🛠️ Technologies Used
-- Python 3
-- qrcode library
-- Pillow (PIL)
+## Features
+
+* Generate QR codes from text or URLs
+* Custom QR code color selection
+* Custom background color selection
+* Automatic timestamped filenames to prevent overwriting
+* Input validation for empty data
+* Saves QR codes as PNG images
+* Displays the saved file name after generation
+* Beginner-friendly and easy to modify
 
 ---
 
-## 📥 Installation
+## Technologies Used
 
-1. Make sure Python is installed:
-   ```bash
-   python --version
-3. Install required libraries:
- python -m pip install qrcode pillow
+* Python 3
+* qrcode
+* Pillow (PIL)
 
 ---
 
-Where the QR Code is saved
-After running the program, the QR code will be saved as:
-qrcode.png
+## Installation
+
+### 1. Verify Python Installation
+
+```bash
+python --version
+```
+
+### 2. Install Required Libraries
+
+```bash
+python -m pip install qrcode pillow
+```
+
 ---
-License
 
-Totally free to use! Play around with it and make it your own 😄
+## Usage
+
+Run the program:
+
+```bash
+python qr_generator.py
+```
+
+Example:
+
+```text
+Enter text or URL to generate QR code: https://example.com
+Enter file name (without extension): website
+Enter QR color (default: black): blue
+Enter background color (default: white): white
+```
+
+Output:
+
+```text
+QR Code generated successfully.
+Saved as: website_20260603_143210.png
 
 
+## Future Improvements
+
+* Logo embedding
+* Batch QR code generation
+* QR code history log
+* Automatic output folder creation
+* GUI version using Tkinter
+* QR code scanner integration
+
+---
+
+## License
+
+This project is free to use, modify, and distribute for educational and personal projects.
