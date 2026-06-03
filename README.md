@@ -26,31 +26,6 @@ This program allows users to enter text or a URL, customize QR code colors, and 
 * Pillow (PIL)
 
 ---
-
-## Installation
-
-### 1. Verify Python Installation
-
-```bash
-python --version
-```
-
-### 2. Install Required Libraries
-
-```bash
-python -m pip install qrcode pillow
-```
-
----
-
-## Usage
-
-Run the program:
-
-```bash
-python qr_generator.py
-```
-
 Example:
 
 ```text
